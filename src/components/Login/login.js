@@ -52,7 +52,9 @@ function Login(props) {
       };
       console.log(options);
       console.log(Usr_Permission_Url);
-      let resPerm = await axios.get(Usr_Permission_Url+ "uid='"+email+"'", options);
+      let url = Usr_Permission_Url + "uid='"+email+"'";
+      //let url = Usr_Permission_Url;
+      let resPerm = await axios.get(url, options);
       let usrPermArray = resPerm.data.resource;
       console.log(usrPermArray);
       if(usrPermArray.length > 0) {
@@ -101,7 +103,7 @@ function Login(props) {
 
   if (redirectToDashboard === true) {
     console.log("Redirect to Dashboard");
-    return <Redirect to="/dashboard" />;
+    return <Redirect to={`${process.env.PUBLIC_URL}/dashboard`} />;
   }
   return (
     <React.Fragment>

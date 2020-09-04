@@ -133,7 +133,7 @@ function Customers(props) {
         return (
           <Link
             to={{
-              pathname: "/editcustomer",
+              pathname: `${process.env.PUBLIC_URL}/editcustomer`,
               state: obj.row.original
             }}
           >
@@ -157,7 +157,7 @@ function Customers(props) {
         return (
           <Link
             to={{
-              pathname: "/clonecustomer",
+              pathname: `${process.env.PUBLIC_URL}/clonecustomer`,
               state: custObj
             }}
           >
@@ -267,13 +267,13 @@ function Customers(props) {
   if (toAddcustomer === true) {
     console.log("toAddcustomer : "+toAddcustomer);
     return (
-      <Redirect to={{ pathname: "/addcustomer"}} />
+      <Redirect to={{ pathname: `${process.env.PUBLIC_URL}/addcustomer` }} />
     );
   }
 
   if (toEditcustomer === true) {
     return (
-      <Redirect to={{ pathname: "/editcustomer", state: props.original }} />
+      <Redirect to={{ pathname: `${process.env.PUBLIC_URL}/editcustomer`, state: props.original }} />
     );
   }
 

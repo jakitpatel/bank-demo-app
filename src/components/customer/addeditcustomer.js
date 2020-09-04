@@ -167,7 +167,7 @@ function Addeditcustomer(props) {
   if (toCustomer === true) {
     console.log("toCustomer : "+toCustomer);
     return (
-      <Redirect to={{ pathname: "/customers"}} />
+      <Redirect to={{ pathname: `${process.env.PUBLIC_URL}/customers` }} />
     );
   }
 

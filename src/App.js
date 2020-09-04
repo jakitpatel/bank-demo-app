@@ -16,10 +16,13 @@ function App(props) {
       <Router>
       <Provider store = {store}>
         <Switch>
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/dashboard" component={Dashboard} />
-          <Route exact path="/customers" component={Dashboard} />
-          <Route exact path="/" component={Login} />
+          <Route exact path={`${process.env.PUBLIC_URL}/login`} component={Login} />
+          <Route exact path={`${process.env.PUBLIC_URL}/dashboard`} component={Dashboard} />
+          <Route exact path={`${process.env.PUBLIC_URL}/customers`} component={Dashboard} />
+          <Route exact path={`${process.env.PUBLIC_URL}/addcustomer`} component={Dashboard} />
+          <Route exact path={`${process.env.PUBLIC_URL}/clonecustomer`} component={Dashboard} />
+          <Route exact path={`${process.env.PUBLIC_URL}/editcustomer`} component={Dashboard} />
+          <Route exact path={`${process.env.PUBLIC_URL}`} component={Login} />
         </Switch>
       </Provider>
       </Router>

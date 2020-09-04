@@ -1,5 +1,6 @@
 {
-  "name": "bank-app",
+  "name": "datawiz-app",
+  "homepage": "https://devnycweb01.comfed.local/datawiz",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
