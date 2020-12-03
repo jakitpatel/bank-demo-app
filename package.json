@@ -1,6 +1,6 @@
 {
-  "name": "datawiz-app",
-  "homepage": "https://devnycweb01.comfed.local/datawiz",
+  "name": "customersapp",
+  "homepage": "https://devnycweb01.comfed.local/customersapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

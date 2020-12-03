@@ -4,7 +4,7 @@ import Login from "./components/Login/login";
 import Dashboard from "./components/Dashboard/DashboardContainer";
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import rootReducer from './reducer/rootreducer';
+import rootReducer from './reducer/rootReducer.js';
 
 const INITIAL_STATE = {};
 

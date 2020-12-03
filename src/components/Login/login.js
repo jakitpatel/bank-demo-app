@@ -3,9 +3,7 @@ import { NavLink, Redirect } from "react-router-dom";
 //import * as Icon from "react-feather";
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
-import {Login_Url} from './../../const';
-import {Usr_Permission_Url} from './../../const';
-import {API_KEY} from './../../const';
+import {API_KEY, Login_Url, Usr_Permission_Url} from './../../const';
 
 import "./login.css";
 function Login(props) {
